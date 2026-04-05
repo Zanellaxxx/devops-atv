@@ -133,7 +133,8 @@ body {
 .task-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 12px 14px;
   border: 1.5px solid #e5e7eb;
   border-radius: 10px;
@@ -177,6 +178,7 @@ body {
 /* ── Edit input inside list ── */
 .edit-input {
   flex: 1;
+  min-width: 0;
 }
 
 /* ── Actions ── */
@@ -184,6 +186,7 @@ body {
   display: flex;
   gap: 6px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 /* ── Empty state ── */
