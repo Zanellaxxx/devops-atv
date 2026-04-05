@@ -194,10 +194,29 @@ body {
   padding: 24px 0 8px;
 }
 
-/* ── Summary ── */
-.summary {
+/* ── Footer ── */
+.footer {
   margin-top: 20px;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary {
   font-size: 0.82rem;
   color: #6b7280;
+}
+
+.btn-clear {
+  background: transparent;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.btn-clear:hover {
+  color: #dc2626;
+  border-color: #fca5a5;
+  background: #fff1f2;
 }

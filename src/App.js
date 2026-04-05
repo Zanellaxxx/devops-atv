@@ -117,9 +117,16 @@ function App() {
         </ul>
 
         {tasks.length > 0 && (
-          <p className="summary">
-            {tasks.filter(t => t.done).length} de {tasks.length} concluída(s)
-          </p>
+          <div className="footer">
+            <p className="summary">
+              {tasks.filter(t => t.done).length} de {tasks.length} concluída(s)
+            </p>
+            {tasks.some(t => t.done) && (
+              <button className="btn btn-clear" onClick={() => setTasks(tasks.filter(t => !t.done))}>
+                Limpar concluídas
+              </button>
+            )}
+          </div>
         )}
       </div>
     </div>
